@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+       <bean id="helloworld" class="com.jiangjg.springstudy.helloworld.HelloWorld">
+              <property name="name" value="spring"></property>
+       </bean>
+
+        <bean id="dataSource" class="com.jiangjg.springstudy.helloworld.DataSource">
+            <property name="properties">
+                <props>
+                    <prop key="user">root</prop>
+                    <prop key="passwd">123456</prop>
+                </props>
+            </property>
+        </bean>
+
+    <!--配置单列的集合bean，以供其他的bean引用-->
+    <util:list id="helloworlds">
+        <ref bean="helloworld"></ref>
+        <ref bean="helloworld"></ref>
+    </util:list>
+
+    <!--p命名空间-->
+    <bean id="h1" class="com.jiangjg.springstudy.helloworld.HelloWorld" p:name="jjj"></bean>
+
+</beans>
