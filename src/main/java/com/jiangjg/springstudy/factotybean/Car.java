@@ -1,16 +1,16 @@
-package com.jiangjg.springstudy.cycle;
+package com.jiangjg.springstudy.factotybean;
 
 /**
  * Created by root on 16-4-2.
  */
 public class Car {
 
-    public void init(){
-        System.out.println("init2");
+    public Car(){
+
     }
 
-    public void destroy(){
-        System.out.println("destroy");
+    public Car(String branch) {
+        this.branch = branch;
     }
 
     @Override

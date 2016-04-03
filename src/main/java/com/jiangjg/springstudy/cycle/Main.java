@@ -8,8 +8,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans-cycle.xml");
-        Car car = applicationContext.getBean(Car.class);
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans-cycle.xml");
+        Car car = (Car) applicationContext.getBean("car");
+        System.out.println(car.getBranch());
+        //关闭IOC容器
+        applicationContext.close();
+
 
     }
 
