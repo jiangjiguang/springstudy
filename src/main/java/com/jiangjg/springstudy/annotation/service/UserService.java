@@ -17,8 +17,13 @@ public class UserService {
      */
     @Qualifier("userjdbcRepository")
     private UserRepository userRepository;
+
     public void add(){
         System.out.println("UserService add");
         userRepository.save();
+    }
+
+    public String getName(){
+        return "UserService";
     }
 }
