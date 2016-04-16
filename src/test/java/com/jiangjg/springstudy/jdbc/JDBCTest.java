@@ -23,7 +23,7 @@ import java.util.Map;
  * Created by root on 16-4-4.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:beans-jdbc.xml")
+@ContextConfiguration(locations = "classpath:spring/beans-jdbc.xml")
 public class JDBCTest extends AbstractJUnit4SpringContextTests {
 
     @Autowired

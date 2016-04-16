@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by root on 16-4-10.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:beans-transaction.xml")
+@ContextConfiguration(locations = "classpath:spring/beans-transaction.xml")
 public class StudentDaoTest {
     @Autowired
     private StudentDao studentDao;

@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans-spel.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/beans-spel.xml");
 
         Person person2 = (Person) applicationContext.getBean("person");
         System.out.println(person2);

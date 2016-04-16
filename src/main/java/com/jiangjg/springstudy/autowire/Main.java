@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans-autowire.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/beans-autowire.xml");
 
         Person person = applicationContext.getBean(Person.class);
 

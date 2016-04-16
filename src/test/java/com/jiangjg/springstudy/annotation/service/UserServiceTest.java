@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by root on 16-4-4.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:beans-annotation.xml")
+@ContextConfiguration(locations = "classpath:spring/beans-annotation.xml")
 public class UserServiceTest extends AbstractJUnit4SpringContextTests {
     @Autowired
     ApplicationContext ctx;

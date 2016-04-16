@@ -1,9 +1,6 @@
 package com.jiangjg.springstudy.annotation;
 
 import com.jiangjg.springstudy.annotation.controller.UserController;
-import com.jiangjg.springstudy.annotation.repository.UserRepository;
-import com.jiangjg.springstudy.annotation.repository.UserRepositoryImpl;
-import com.jiangjg.springstudy.annotation.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans-annotation.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/beans-annotation.xml");
 
         //UserRepository repository = applicationContext.getBean(UserRepositoryImpl.class);
         //repository.save();

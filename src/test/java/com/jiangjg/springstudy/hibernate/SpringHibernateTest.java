@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * Created by root on 16-4-10.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:beans-hibernate.xml")
+@ContextConfiguration(locations = "classpath:spring/beans-hibernate.xml")
 public class SpringHibernateTest {
 
     @Autowired

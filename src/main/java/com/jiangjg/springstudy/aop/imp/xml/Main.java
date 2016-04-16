@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans-aop-xml.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/beans-aop-xml.xml");
 
         AtithmeticCaculator atithmeticCaculator =  applicationContext.getBean(AtithmeticCaculator.class);
 
