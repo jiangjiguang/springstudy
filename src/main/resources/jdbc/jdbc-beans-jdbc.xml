@@ -6,7 +6,11 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
        <!--导入资源文件-->
-       <context:property-placeholder location="classpath:spring/jdbc.properties"></context:property-placeholder>
+       <context:property-placeholder location="classpath:jdbc/jdbc-jdbc.properties"></context:property-placeholder>
+
+       <bean id="driverManager" class="java.sql.DriverManager">
+       </bean>
+
 
        <!--配置C3P0数据源-->
        <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">

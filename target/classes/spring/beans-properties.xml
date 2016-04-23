@@ -7,7 +7,7 @@
 
 
        <!--bean的后处理器-->
-       <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
+       <context:property-placeholder location="classpath:spring/db.propertiesperties"></context:property-placeholder>
 
        <bean id="person" class="com.jiangjg.springstudy.autowire.Person">
               <property name="name" value="${name}"></property>
