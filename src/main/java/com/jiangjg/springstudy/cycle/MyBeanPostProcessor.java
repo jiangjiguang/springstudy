@@ -14,9 +14,9 @@ public class MyBeanPostProcessor  implements BeanPostProcessor{
 
     public Object postProcessAfterInitialization(Object o, String s) throws BeansException {
 
-        System.out.println("postProcessBeforeInitialization" + o + " " + s);
+        System.out.println("postProcessAfterInitialization" + o + " " + s);
         Car car = new Car();
         car.setBranch("雪佛兰");
-        return o;
+        return car;
     }
 }

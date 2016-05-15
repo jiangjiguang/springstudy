@@ -6,6 +6,13 @@
        <bean id="car" class="com.jiangjg.springstudy.cycle.Car" init-method="init" destroy-method="destroy">
               <property name="branch" value="bike"></property>
        </bean>
+       <bean id="car2" class="com.jiangjg.springstudy.cycle.Car2" init-method="init" destroy-method="destroy">
+              <property name="branch" value="bike2"></property>
+       </bean>
+
+       <bean id="car3" class="com.jiangjg.springstudy.cycle.Car2" init-method="init" destroy-method="destroy">
+              <property name="branch" value="bike2"></property>
+       </bean>
 
        <!--配置bean的后芝处理器-->
        <bean class="com.jiangjg.springstudy.cycle.MyBeanPostProcessor"></bean>
